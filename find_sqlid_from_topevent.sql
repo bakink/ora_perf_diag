@@ -1,0 +1,1 @@
+select event, session_id, user_id, sql_id, program, module, sample_time, count(sql_exec_id) from v$active_session_history where event like '&_event' group by event, session_id, user_id, sql_id, program, module, sample_time;
