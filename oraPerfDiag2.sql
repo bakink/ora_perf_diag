@@ -26,9 +26,9 @@ select case '&selection.'
 	   when '6a' then '@gen_sql_mon_rpt_active.sql'
 	   when '7' then '@gen_sql_id_pga_rpt.sql'
 	   when '8' then '@pre_snapper.sql' 
-	   when '9' then '@oraPerfDiag2'  
+	   when '9' then '@oraPerfDiag1.sql'  
 	   when '10' then '@exit.sql'
-       else '@rtdiag_2.sql' --this script
+       else '@oraPerfDiag2.sql' --this script
        end as script 
 from dual; 
 
